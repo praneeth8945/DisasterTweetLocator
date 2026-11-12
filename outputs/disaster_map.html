@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92c6dd13eb2e2c58b64dff8405a3f4e7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_92c6dd13eb2e2c58b64dff8405a3f4e7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_92c6dd13eb2e2c58b64dff8405a3f4e7 = L.map(
+                "map_92c6dd13eb2e2c58b64dff8405a3f4e7",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9748f6af184c94bde5442e050ea9e355 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9748f6af184c94bde5442e050ea9e355.addTo(map_92c6dd13eb2e2c58b64dff8405a3f4e7);
+        
+    
+            var marker_ef3d2b11cc9df95a862dde3397a59da8 = L.marker(
+                [39.7392, -104.9903],
+                {
+}
+            ).addTo(map_92c6dd13eb2e2c58b64dff8405a3f4e7);
+        
+    
+            var icon_72f7a7b6c63b50abe36b1bae89601586 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e5fd0ba1c1ba510932635373d002b87 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_73f8ce99155cd431040423e6865210a3 = $(`<div id="html_73f8ce99155cd431040423e6865210a3" style="width: 100.0%; height: 100.0%;"><b>Denver</b><br><i>Denver, Colorado, United States (offline cache)</i><br><br>Snowstorm in Denver! Whiteout conditions, highways closed, and locals hunkering down<br><br>P(disaster) = 0.86</div>`)[0];
+                popup_8e5fd0ba1c1ba510932635373d002b87.setContent(html_73f8ce99155cd431040423e6865210a3);
+            
+        
+
+        marker_ef3d2b11cc9df95a862dde3397a59da8.bindPopup(popup_8e5fd0ba1c1ba510932635373d002b87)
+        ;
+
+        
+    
+    
+            marker_ef3d2b11cc9df95a862dde3397a59da8.bindTooltip(
+                `<div>
+                     Denver
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef3d2b11cc9df95a862dde3397a59da8.setIcon(icon_72f7a7b6c63b50abe36b1bae89601586);
+            
+    
+            var marker_41288a8fb3d8971de18a7237d7dcd06e = L.marker(
+                [35.4676, -97.5164],
+                {
+}
+            ).addTo(map_92c6dd13eb2e2c58b64dff8405a3f4e7);
+        
+    
+            var icon_572999b1ab6be0a8804f254fe0157d17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23528ab6ea4d5f204d53603f4a18f9fb = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_dab0c684e0c6c0d44914d6e8d8f06c1e = $(`<div id="html_dab0c684e0c6c0d44914d6e8d8f06c1e" style="width: 100.0%; height: 100.0%;"><b>Oklahoma City</b><br><i>Oklahoma City, Oklahoma, United States (offline cache)</i><br><br>Tornado warning in Oklahoma City! Sirens blaring, skies darkening, and residents seeking shelter.<br><br>P(disaster) = 1.00</div>`)[0];
+                popup_23528ab6ea4d5f204d53603f4a18f9fb.setContent(html_dab0c684e0c6c0d44914d6e8d8f06c1e);
+            
+        
+
+        marker_41288a8fb3d8971de18a7237d7dcd06e.bindPopup(popup_23528ab6ea4d5f204d53603f4a18f9fb)
+        ;
+
+        
+    
+    
+            marker_41288a8fb3d8971de18a7237d7dcd06e.bindTooltip(
+                `<div>
+                     Oklahoma City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_41288a8fb3d8971de18a7237d7dcd06e.setIcon(icon_572999b1ab6be0a8804f254fe0157d17);
+            
+    
+            var marker_0a783646cf708b968e7ed2de3cb60140 = L.marker(
+                [29.9511, -90.0715],
+                {
+}
+            ).addTo(map_92c6dd13eb2e2c58b64dff8405a3f4e7);
+        
+    
+            var icon_545080af3d8a587c6791c506be8e2da5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96ac8a208da1a02a0630d2227e960f74 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c3e948570c3f4f3cf9db7264c4297f1d = $(`<div id="html_c3e948570c3f4f3cf9db7264c4297f1d" style="width: 100.0%; height: 100.0%;"><b>New Orleans</b><br><i>New Orleans, Louisiana, United States (offline cache)</i><br><br>Flooding devastates New Orleans, Louisiana, as levees breach and neighborhoods are submerged. Residents evacuated as waters rise<br><br>P(disaster) = 1.00</div>`)[0];
+                popup_96ac8a208da1a02a0630d2227e960f74.setContent(html_c3e948570c3f4f3cf9db7264c4297f1d);
+            
+        
+
+        marker_0a783646cf708b968e7ed2de3cb60140.bindPopup(popup_96ac8a208da1a02a0630d2227e960f74)
+        ;
+
+        
+    
+    
+            marker_0a783646cf708b968e7ed2de3cb60140.bindTooltip(
+                `<div>
+                     New Orleans
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0a783646cf708b968e7ed2de3cb60140.setIcon(icon_545080af3d8a587c6791c506be8e2da5);
+            
+    
+            var marker_7d7c9f9bbba85ffad9cad55886a880f7 = L.marker(
+                [30.9843, -91.9623],
+                {
+}
+            ).addTo(map_92c6dd13eb2e2c58b64dff8405a3f4e7);
+        
+    
+            var icon_d9916e8b95c6953f6b8968d96edfe30a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4eb618d2c584266b216e5833c41f3cc1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7c7d7305f3babd663700545f6ea12855 = $(`<div id="html_7c7d7305f3babd663700545f6ea12855" style="width: 100.0%; height: 100.0%;"><b>Louisiana</b><br><i>Louisiana, United States (offline cache)</i><br><br>Flooding devastates New Orleans, Louisiana, as levees breach and neighborhoods are submerged. Residents evacuated as waters rise<br><br>P(disaster) = 1.00</div>`)[0];
+                popup_4eb618d2c584266b216e5833c41f3cc1.setContent(html_7c7d7305f3babd663700545f6ea12855);
+            
+        
+
+        marker_7d7c9f9bbba85ffad9cad55886a880f7.bindPopup(popup_4eb618d2c584266b216e5833c41f3cc1)
+        ;
+
+        
+    
+    
+            marker_7d7c9f9bbba85ffad9cad55886a880f7.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d7c9f9bbba85ffad9cad55886a880f7.setIcon(icon_d9916e8b95c6953f6b8968d96edfe30a);
+            
+    
+            map_92c6dd13eb2e2c58b64dff8405a3f4e7.fitBounds(
+                [[39.7392, -104.9903], [35.4676, -97.5164], [29.9511, -90.0715], [30.9843, -91.9623]],
+                {}
+            );
+        
+</script>
+</html>

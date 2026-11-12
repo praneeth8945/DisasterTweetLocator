@@ -1,0 +1,17 @@
+# Large embedding files (download with the command in README)
+data/glove*.txt
+data/glove*.gz
+data/glove*.zip
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# LaTeX build files
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.synctex.gz

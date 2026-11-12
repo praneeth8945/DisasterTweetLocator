@@ -1,0 +1,6 @@
+text,probability,is_disaster,locations
+"Snowstorm in Denver! Whiteout conditions, highways closed, and locals hunkering down",0.8559849858283997,True,Denver
+"Tornado warning in Oklahoma City! Sirens blaring, skies darkening, and residents seeking shelter.",0.9985110759735107,True,Oklahoma City
+"Flooding devastates New Orleans, Louisiana, as levees breach and neighborhoods are submerged. Residents evacuated as waters rise",0.9955748319625854,True,New Orleans; Louisiana
+"Severe flooding in Malawi displaces thousands, devastates crops. Relief efforts are underway. #MalawiFloods #DisasterRelief",0.9925205111503601,True,
+"Just had the best pizza of my life, this place is fire!",0.08966052532196045,False,

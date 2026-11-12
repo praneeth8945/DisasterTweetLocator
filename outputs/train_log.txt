@@ -1,0 +1,43 @@
+# Note: the BiLSTM seed-42 run was executed in an earlier invocation of the same train.py (resume logic skipped it here); its result is the first line of runs.jsonl.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794464546.525545     342 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794464547.847947     342 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Loaded 7613 tweets | class balance {0: 4342, 1: 3271}
+
+### seed 42 | train 5328 val 762 test 1523 | GloVe coverage 82.5%
+BiGRU + GloVe    seed 42: test acc 0.8240 prec 0.8683 rec 0.6957 f1 0.7725 | best epoch 6/9
+GRU + GloVe      seed 42: test acc 0.8129 prec 0.8668 rec 0.6667 f1 0.7537 | best epoch 8/11
+LSTM + GloVe     seed 42: test acc 0.8043 prec 0.8853 rec 0.6254 f1 0.7330 | best epoch 5/8
+
+### seed 1 | train 5328 val 762 test 1523 | GloVe coverage 82.4%
+BiLSTM + GloVe   seed 1: test acc 0.8201 prec 0.8055 rec 0.7661 f1 0.7853 | best epoch 7/10
+BiGRU + GloVe    seed 1: test acc 0.8293 prec 0.8518 rec 0.7294 f1 0.7858 | best epoch 6/9
+GRU + GloVe      seed 1: test acc 0.8240 prec 0.8362 rec 0.7339 f1 0.7818 | best epoch 6/9
+LSTM + GloVe     seed 1: test acc 0.8194 prec 0.8330 rec 0.7248 f1 0.7751 | best epoch 6/9
+
+### seed 2 | train 5328 val 762 test 1523 | GloVe coverage 82.8%
+BiLSTM + GloVe   seed 2: test acc 0.8247 prec 0.8220 rec 0.7554 f1 0.7873 | best epoch 5/8
+BiGRU + GloVe    seed 2: test acc 0.8175 prec 0.8123 rec 0.7477 f1 0.7787 | best epoch 6/9
+GRU + GloVe      seed 2: test acc 0.8214 prec 0.8205 rec 0.7477 f1 0.7824 | best epoch 6/9
+LSTM + GloVe     seed 2: test acc 0.8155 prec 0.8093 rec 0.7462 f1 0.7765 | best epoch 6/9
+
+### seed 3 | train 5328 val 762 test 1523 | GloVe coverage 82.8%
+BiLSTM + GloVe   seed 3: test acc 0.8162 prec 0.8076 rec 0.7508 f1 0.7781 | best epoch 3/6
+BiGRU + GloVe    seed 3: test acc 0.8030 prec 0.7921 rec 0.7339 f1 0.7619 | best epoch 2/5
+GRU + GloVe      seed 3: test acc 0.7912 prec 0.8206 rec 0.6575 f1 0.7301 | best epoch 1/4
+LSTM + GloVe     seed 3: test acc 0.7919 prec 0.8150 rec 0.6667 f1 0.7334 | best epoch 1/4
+
+### seed 4 | train 5328 val 762 test 1523 | GloVe coverage 82.8%
+BiLSTM + GloVe   seed 4: test acc 0.8030 prec 0.7801 rec 0.7538 f1 0.7667 | best epoch 1/4
+BiGRU + GloVe    seed 4: test acc 0.8214 prec 0.8141 rec 0.7569 f1 0.7845 | best epoch 9/12
+GRU + GloVe      seed 4: test acc 0.7919 prec 0.7274 rec 0.8242 f1 0.7728 | best epoch 8/11
+LSTM + GloVe     seed 4: test acc 0.7879 prec 0.7445 rec 0.7706 f1 0.7573 | best epoch 1/4
+
+TABLE I — MODEL EVALUATION METRICS (held-out test, mean over seeds)
+         Model Accuracy (%) Precision Recall F1 Score  Seeds
+BiLSTM + GloVe 81.62 ± 0.81    0.8158 0.7413   0.7757      5
+ BiGRU + GloVe 81.90 ± 0.99    0.8277 0.7327   0.7767      5
+   GRU + GloVe 80.83 ± 1.58    0.8143 0.7260   0.7641      5
+  LSTM + GloVe 80.38 ± 1.39    0.8174 0.7067   0.7551      5
+EXIT 0

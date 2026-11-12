@@ -1,0 +1,6 @@
+{
+  "Denver": {"lat": 39.7392, "lon": -104.9903, "address": "Denver, Colorado, United States"},
+  "Oklahoma City": {"lat": 35.4676, "lon": -97.5164, "address": "Oklahoma City, Oklahoma, United States"},
+  "New Orleans": {"lat": 29.9511, "lon": -90.0715, "address": "New Orleans, Louisiana, United States"},
+  "Louisiana": {"lat": 30.9843, "lon": -91.9623, "address": "Louisiana, United States"}
+}

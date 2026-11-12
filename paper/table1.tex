@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\centering
+\caption{Model Evaluation Metrics}
+\label{tab:metrics}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{Accuracy (\%)} & \textbf{Precision} & \textbf{Recall} & \textbf{F1 Score} \\
+\midrule
+BiLSTM + GloVe & 81.62 $\pm$ 0.81 & 0.8158 & 0.7413 & 0.7757 \\
+BiGRU + GloVe & 81.90 $\pm$ 0.99 & 0.8277 & 0.7327 & 0.7767 \\
+GRU + GloVe & 80.83 $\pm$ 1.58 & 0.8143 & 0.7260 & 0.7641 \\
+LSTM + GloVe & 80.38 $\pm$ 1.39 & 0.8174 & 0.7067 & 0.7551 \\
+\bottomrule
+\end{tabular}
+
+\vspace{2pt}
+\parbox{0.95\columnwidth}{\scriptsize Held-out test set ($n=1523$). Mean over 5 random seeds; accuracy shown as mean $\pm$ standard deviation.}
+\end{table}
